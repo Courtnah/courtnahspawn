@@ -4,4 +4,9 @@ CSG myCylinder = new Cylinder(20, // Radius at the bottom
                       		40, // Height
                       		(int)30 //resolution
                       		).toCSG()//convert to CSG to dispr
-return [myCylinder]
+
+CSG sphereHighRes = new Sphere(25,// Spheres radius
+						40,//elevation Divisions
+						40)// vertical divisions
+						.toCSG()// convert to CSG to display
+return [myCylinder, sphereHighRes]
