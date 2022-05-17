@@ -5,8 +5,9 @@ CSG myCylinder = new Cylinder(20, // Radius at the bottom
                       		(int)30 //resolution
                       		).toCSG()//convert to CSG to dispr
 
-CSG sphereHighRes = new Sphere(25,// Spheres radius
+CSG sphereHighRes = new Sphere(20,// Spheres radius
 						40,//elevation Divisions
 						40)// vertical divisions
 						.toCSG()// convert to CSG to display
+						.movez(55)
 return [myCylinder, sphereHighRes]
