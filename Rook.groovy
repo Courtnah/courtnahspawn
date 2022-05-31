@@ -12,7 +12,7 @@ CSG sphereHighRes = new Sphere(15,// Spheres radius
 						.toCSG()// convert to CSG to display
 						.movez(height+20)
 CSG TwoRoundedCylinder = new RoundedCylinder(30,10)
-                                .cornerRadius(5)// sets the radius of the corner
+                                .cornerRadius(6)// sets the radius of the corner
                                 .toCSG()// converts it to a CSG tor display
                                
 CSG UpperRoundedCylinder = new RoundedCylinder(15,10.0)
@@ -25,4 +25,4 @@ CSG OneRoundedCylinder = new RoundedCylinder(7,10)
                                 .movez(10)
 CSG Bottom= OneRoundedCylinder.union(TwoRoundedCylinder).hull();
 
-return (myCylinder,sphereHighRes,UpperRoundedCylinder,Bottom)
+return [myCylinder,sphereHighRes,UpperRoundedCylinder,Bottom]
